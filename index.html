@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ekagr</title>
+    <style>
+        *{
+            font-weight: bolder;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        button {
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+
+        .hide {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hide button {
+            width: 30vw;
+            margin-top: 1rem;
+        }
+        .bade{
+            font-size: x-large;
+            color: white;
+            margin: 1% 2%;
+            border: 2px solid black;
+            border-radius: 70px;
+            background: rgb(89, 0, 255);
+            padding: 0.5%;
+        }
+        .chote{
+            font-size: large;
+            margin-left: 3rem;
+            color: white;
+            border: 1px solid black;
+            border-radius: 70px;
+            background: rgb(255, 123, 0);
+            margin-top: 1%;
+            padding: 0.5%;
+        }
+        #black{
+            font-size: 1.25rem;
+            color: white;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            text-justify: center;
+        }
+    </style>
+</head>
+
+<body>
+<div id="black"> Created By Nitesh For Nitesh</div>
+    <div>
+        <button class="bade" onclick="hide()">Coding</button>
+
+        <ul id="p">
+            <li><a href="https://youtu.be/chx9Rs41W6g">JavaScript - Basic</a></li>
+            <li><a href="https://youtu.be/BLl32FvcdVM">Node (One Video CHW)</a></li>
+            <li><a href="https://youtu.be/7H_QH9nipNs">Express (One Video CHW)</a></li>
+            <li><a href="https://youtu.be/RGKi6LSPDLU">React (One Video CHW)</a></li>
+            <li><a href="https://youtu.be/oSIv-E60NiU">MongoDB (One Video CHW)</a></li>
+            <li><a href="https://youtu.be/Llsq1y-HWs4">JavaScript - Advance</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <button class="bade" onclick="hide2()">Study</button>
+
+        <div id="hide">
+            <div>
+            <button class="chote" onclick="collasp()"> Maths: </button>
+            <ul id="bu">
+                <li><a href="https://youtu.be/KD1LI_y_iH4">Ch. 1</a></li>
+                <li><a href="https://youtu.be/xyApqy0SUWk">Ch. 2</a></li>
+                <li><a href="https://youtu.be/lPDEzjWhVHY">Ch. 3</a></li>
+                <li><a href="https://youtu.be/TXZC3pz9cz8">Ch. 4</a></li>
+                <li><a href="https://youtu.be/wIXMlU4hhRs">Ch. 5</a></li>
+            </ul>
+            </div>
+
+            <div>
+            <button class="chote" onclick="collasp2()"> Science: </button>
+            <ul id="bu2">
+                <li><a href="https://youtu.be/eV8Zyp8zAdQ">Ch. 1</a></li>
+                <li><a href="https://youtu.be/bwAF_I-4M3Q">Ch. 2</a></li>
+                <li><a href="https://youtu.be/z9p35_M-H3w">Ch. 6</a></li>
+            </ul>
+            </div>
+
+            <div>
+            <button class="chote" onclick="collasp3()"> SSt: </button>
+            <ul id="bu3">
+                <li><a href="https://youtu.be/GDlWkr6sAT4">His. Ch. 1</a></li>
+                <li><a href="https://youtu.be/jlnlP_2dW5M">Civ. Ch. 1</a></li>
+                <li><a href="https://youtu.be/6YPllljDkes">Geo. Ch. 1</a></li>
+                <li><a href="https://youtu.be/qbkWf6txqWA">Eco. Ch. 1</a></li>
+            </ul>
+            </div>
+
+            <div>
+            <button class="chote" onclick="collasp4()"> Extra </button>
+            <ul id="bu4">
+                <li><a href="https://youtu.be/Mm9e2IQdfDU">Tenses</a></li>
+                <li><a href="https://youtu.be/lLKg_XUI4ms">Modals</a></li>
+<li><a href="">...More</a></li>
+            </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+<script>
+    let p = document.querySelector('#p');
+    let hideIt = document.querySelector('#hide');
+    let bu = document.querySelector('#bu');
+    let bu2 = document.querySelector('#bu2');
+    let bu3 = document.querySelector('#bu3');
+    let bu4 = document.querySelector('#bu4');
+    
+    p.style.display = 'none';
+    hideIt.style.display = 'none';
+    bu.style.display = 'none';
+    bu2.style.display = 'none';
+    bu3.style.display = 'none';
+    bu4.style.display = 'none';
+
+    function hide() {
+        if (p.style.display === 'none') {
+            p.style.display = 'block'
+        } else {
+            p.style.display = 'none';
+        }
+    }
+
+    function hide2() {
+        if (hideIt.style.display === 'none') {
+            hideIt.style.display = 'block'
+        } else {
+            hideIt.style.display = 'none';
+        }
+    }
+
+    function collasp() {
+        if (bu.style.display === 'none') {
+            bu.style.display = 'block'
+        } else {
+            bu.style.display = 'none';
+        }
+    }
+    function collasp2() {
+        if (bu2.style.display === 'none') {
+            bu2.style.display = 'block'
+        } else {
+            bu2.style.display = 'none';
+        }
+    }
+    function collasp3() {
+        if (bu3.style.display === 'none') {
+            bu3.style.display = 'block'
+        } else {
+            bu3.style.display = 'none';
+        }
+    }
+    function collasp4() {
+        if (bu4.style.display === 'none') {
+            bu4.style.display = 'block'
+        } else {
+            bu4.style.display = 'none';
+        }
+    }
+
+</script>
+
+</html>
